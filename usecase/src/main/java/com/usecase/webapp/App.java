@@ -9,7 +9,6 @@ public class App
     public static String filePath="/tmp/items";
     public static void main( String[] args )
     {
-  	   get("/hello", (request, response) -> "Hello World!");
    	   post("/post/data", "application/json", (request,response) -> {
 		
 		ItemProtos.Item.Builder user = ItemProtos.Item.newBuilder();		   	
